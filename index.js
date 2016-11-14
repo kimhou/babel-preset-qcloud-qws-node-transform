@@ -15,7 +15,7 @@ module.exports = function buildPreset(context, opts) {
 
 function createPresets(context, opts) {
 	opts = opts || {};
-	opts.targets = opts.targets || {'node': 6.3};
+	opts.targets = opts.targets || {'node': 6.0};
 
 	return [
 		require("react"),
