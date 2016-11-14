@@ -16,16 +16,16 @@ module.exports = function buildPreset(context, opts) {
 
 function createPresets(context, opts) {
 	opts = opts || {};
-	var targets = opts.targets || {node: 6};
 
 	return [
 		require("babel-preset-react"),
 		[require("babel-preset-env"), {
-			targets: targets,
-			"whitelist": [
-				"transform-es2015-destructuring",
-				"transform-es2015-parameters"
-			]
+			targets: opts.targets || {node: 6.3},
+			whitelist: opts.whitelist || []
+			// "whitelist": [
+			// 	"transform-es2015-destructuring",
+			// 	"transform-es2015-parameters"
+			// ]
 		}]
 	];
 }
