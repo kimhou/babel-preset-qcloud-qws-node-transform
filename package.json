@@ -1,0 +1,31 @@
+{
+  "name": "babel-preset-qcloud-qws-node-transform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimhou/babel-preset-qcloud-qws-node-transform.git"
+  },
+  "keywords": [
+    "babel"
+  ],
+  "author": "kimhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kimhou/babel-preset-qcloud-qws-node-transform/issues"
+  },
+  "homepage": "https://github.com/kimhou/babel-preset-qcloud-qws-node-transform#readme",
+  "dependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.18.0",
+    "babel-plugin-transform-es2015-parameters": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-env": "0.0.7",
+    "babel-preset-react": "^6.16.0"
+  }
+}
