@@ -19,7 +19,7 @@ function createPresets(context, opts) {
 
 	return [
 		require("react"),
-		[require("env"), {
+		[require("babel-preset-env"), {
 			targets: targets,
 			"whitelist": [
 				require("babel-plugin-transform-es2015-destructuring"),
