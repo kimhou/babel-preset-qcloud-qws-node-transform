@@ -34,7 +34,7 @@ function createPresets(context, opts) {
 function createPlugins(context, opts) {
 	return [
 		[
-			path.join(__dirname, "node_modules/babel-plugin-transform-require-ignore"),
+			path.join(__dirname, "../babel-plugin-transform-require-ignore"),
 			{"extensions": [".css", ".less", ".sass"]}
 		],
 		require("babel-plugin-add-module-exports"),
