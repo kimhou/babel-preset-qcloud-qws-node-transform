@@ -3,6 +3,7 @@
  * @desc
  * @author Created by kimhou on 2016/11/11
  */
+const path = require('path');
 
 module.exports = function buildPreset(context, opts) {
 	var presets = createPresets(context, opts),
@@ -32,6 +33,10 @@ function createPresets(context, opts) {
 
 function createPlugins(context, opts) {
 	return [
+		[
+			path.join(__dirname, "node_modules/babel-plugin-transform-require-ignore"),
+			{"extensions": [".css", ".less", ".sass"]}
+		],
 		require("babel-plugin-add-module-exports"),
 		require("babel-plugin-transform-object-rest-spread"),
 		require("babel-plugin-transform-class-properties")
